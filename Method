@@ -1,6 +1,12 @@
+다른 프로그래밍 언어에는 함수라는 것이 별도로 존재한다 하지만 자바는 클래스를 떠나 존재하는 것은 있을 수 없기 때문에 자바의 함수는 따로 존재하지 않고 클래스 내에 존재한다.
+
+자바는 이러한 클래스 내의 함수를 메서드라고 부른다.
+
+
+
 public class Sample {
     int sum(int a, int b) {
-        return a + b;
+        return a + b; //  return은 메서드의 결과 값을 돌려주는 명령어이다
     }
 
     public static void main(String[] args) {
@@ -11,5 +17,6 @@ public class Sample {
         int c = sample.sum(a, b);
 
         System.out.println(c);
+        // 위 코드는 sum메서드에 3, 4 라는 입력값을 전달하여 7이라는 값을 리턴받는 예제이다.
     }
 }
